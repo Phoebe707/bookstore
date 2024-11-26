@@ -6,6 +6,20 @@
 
 <h1>書名列表</h1>
 
+{% for b in bb %}
+    <ul>
+        <li>書名:{{ b.bookname }}</li>
+        <li>作者:{{ b.author }}</li>
+        <li>出版日期:{{ b.pubdate }}</li>
+        <li>出版社:{{ b.publisher }}</li>
+        <li>定價:{{ b.price }}</li>
+        <li>簡介:{{ b.content }}</li>
+    </ul>
+{% endfor %}
+
+
+
+
 <p><a href="{% url 'HarryPotter' %}">哈利波特</a></p>
 
 <p><a href="{% url 'LordofRing' %}">魔戒</a></p>
