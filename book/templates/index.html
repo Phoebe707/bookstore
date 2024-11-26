@@ -19,11 +19,11 @@
         
         {% for b in bb %}
         <tr>
-            <td>{{ b.bookname }}</td>
+            <td><a href="{{b.id}}/onebook">{{ b.bookname }}</a></td>
             <td>{{ b.author }}</td>
             <td>{{ b.publisher }}</td>
             <td>{{ b.pubdate }}</td>
-            <td>{{ b.price }}</td>        
+            <td>{{ b.price }}</td>
         </tr>
         {% endfor %}
 
